@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#181818"
+    android:padding="16dp">
+
+
+    <!-- Display for result -->
+    <TextView
+        android:id="@+id/displayText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="end"
+        android:padding="16dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Calculator buttons -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+            android:id="@+id/buttonClear"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#A5A5A5"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#FF9500"
+            android:text="÷" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#FF9500"
+            android:text="×" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#A5A5A5"
+            android:text="⌫" />
+
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#505050"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#505050"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#505050"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/buttonSubtract"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#FF9500"
+            android:text="-" />
+
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#505050"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#505050"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#505050"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#FF9500"
+            android:text="+" />
+
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#505050"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#505050"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#505050"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/buttonEqual"
+            style="@style/CalculatorButton"
+            android:layout_rowSpan="2"
+            android:backgroundTint="#FF9500"
+            android:text="=" />
+
+        <!-- Fifth Row: 0, Decimal -->
+        <Button
+            android:id="@+id/button0"
+            style="@style/CalculatorButton"
+            android:layout_columnSpan="2"
+            android:backgroundTint="#505050"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/buttonDot"
+            style="@style/CalculatorButton"
+            android:backgroundTint="#505050"
+            android:text="." />
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
